@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>MATLAB WORKSHOP</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+
+
+
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+body, html {
+    height: 100%;
+    line-height: 1.8;
+}
+/* Full height image header */
+.bgimg-1 {
+    background-position: center;
+    background-size: cover;
+    background-image: url("http://1u5ra23nlkv83fo2ig1vo38m.wpengine.netdna-cdn.com/wp-content/uploads/2016/10/Colors-of-Apple-MAC.jpg");
+    min-height: 100%;
+}
+.w3-bar .w3-button {
+    padding: 16px;
+}
+.w3-button w3-wide{
+
+}
+.saurav{
+  font-weight: bold;
+}
+.sau{
+  font-weight: bold;
+}
+</style>
+</head>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-card" id="myNavbar">
+<a href="#home" class="w3-bar-item w3-button w3-wide"><img src="/Users/sauravgajbhiye/Desktop/MATLAB WEBSITE/mimage.png"style="width:25px"style="height:25px"></a>
+    <!-- Right-sided navbar links -->
+    <div class="w3-right w3-hide-small">
+      <a href="#about" class="w3-bar-item w3-button">ABOUT</a>
+      <a href="#team" class="w3-bar-item w3-button"><i class="fa fa-user"></i> TEAM</a>
+      <a href="#contact" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> CONTACT</a>
+    </div>
+    <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+</div>
+
+<!-- Sidebar on small screens when clicking the menu icon -->
+<nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
+  <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT</a>
+  <a href="#team" onclick="w3_close()" class="w3-bar-item w3-button">TEAM</a>
+  <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button">CONTACT</a>
+</nav>
+
+<!-- Header with full-height image -->
+<header class="bgimg-1 w3-display-container w3-grayscale-min" id="home">
+  <div class="w3-display-left w3-text-white" style="padding:48px">
+    <span class="w3-jumbo w3-hide-small">MATLAB PLAY</span><br>
+    <span class="w3-jumbo w3-hide-small">Learn something that matters</span><br>
+    <span class="w3-xxlarge w3-hide-large w3-hide-medium">MATLAB PLAY</span><br>
+    <span class="w3-xxlarge w3-hide-large w3-hide-medium">Learn something that matters</span><br>
+    <span class="w3-large sau">A Workshop jointly organized by IIIT & VNIT Nagpur on 13-14th Jan 2018(Basics) & 19-20-21 Jan 2018(Advanced)</span>
+    <div class="saurav">
+        <p class="w3-hide-small w3-large">REGISTRATION FEES:</p>
+    <p class="w3-large w3-hide-small">IIITN Students-Basics:Rs 1000 & Basics+Advanced:Rs 1500.</p>
+      <p class="w3-large w3-hide-small">Others-Basics:Rs 1300 & Basics+Advanced:Rs 2000.</p>
+    </div>
+    <p><a href="https://docs.google.com/forms/d/e/1FAIpQLSegUfIs94TvzKtsHPF_upcs29miG3ZXkDGVtDzpzFqA3fFTLA/viewform?usp=sf_link" class="w3-button w3-white w3-padding-large w3-large w3-margin-top w3-opacity w3-hover-opacity-off">REGISTER HERE!!!</a></p>
+  </div>
+  <div class="w3-display-bottomleft w3-text-grey w3-large w3-hide-small" style="padding:24px 48px">
+  <a href="https://www.facebook.com/learning.not.ends/">  <i class="fa fa-facebook-official w3-hover-opacity"></i></a>
+  <a href="https://www.instagram.com/iiitnagpur/">  <i class="fa fa-instagram w3-hover-opacity"></i></a>
+    <a href="https://www.youtube.com/channel/UCcQEXD69BdMFyU8872dU2_A">  <i class="fa fa-youtube w3-hover-opacity"></i></a>
+  <a href="https://twitter.com/IIIT_NAGPUR">  <i class="fa fa-twitter w3-hover-opacity"></i></a>
+  </div>
+</header>
+
+<!-- About Section -->
+<div class="w3-container" style="padding:128px 16px" id="about">
+  <h3 class="w3-center">ABOUT THE WORKSHOP</h3>
+  <p class="w3-center w3-large">Key features of our workshop</p>
+  <div class="saurav">
+  <p class="w3-center w3-large w3-hide-large">IIITN Students-Basics:Rs 1000 & Basics+Advanced:Rs 1500.</p>
+    <p class="w3-center w3-large w3-hide-large">Others-Basics:Rs 1300 & Basics+Advanced:Rs 2000.</p>
+  </div>
+  <div class="w3-row-padding w3-center" style="margin-top:64px">
+    <div class="w3-quarter">
+      <i class="fa fa-users w3-margin-bottom w3-jumbo w3-center"></i>
+      <p class="w3-large">What?</p>
+      <p>A five days extensive training workshop on MATLAB, world's most widely used language for technical computing.Learn from experts in the field. </p>
+    </div>
+    <div class="w3-quarter">
+      <i class="fa fa-wifi w3-margin-bottom w3-jumbo w3-center"></i>
+      <p class="w3-large">Basic Level</p>
+      <p>This workshop consists of a basic level where participants can explore essential toolboxes, functioning of preliminary math, graphics, signal processing, image processing, video processing, data import and analysis etc.</p>
+    </div>
+    <div class="w3-quarter">
+      <i class="fa fa-video-camera w3-margin-bottom w3-jumbo"></i>
+      <p class="w3-large">Advance Level</p>
+      <p>This workshop also consists of advance level where the participants would cover LIVE hands on training on some challenging applications in signal, image and video processing using the latest version of MATLAB.</p>
+    </div>
+    <div class="w3-quarter">
+      <i class="fa fa-stethoscope w3-margin-bottom w3-jumbo"></i>
+      <p class="w3-large">Medical Imaging</p>
+      <p>This workshop covers the most important application which is Medical Imaging. Through this workshop you can learn to analyze ECG signals, Brain signals and many more medical applications to be explored.</p>
+    </div>
+  </div>
+</div>
+
+<!-- Promo Section - "We know design" -->
+<div class="w3-container w3-light-grey" style="padding:128px 16px">
+  <div class="w3-row-padding">
+    <div class="w3-col m6">
+      <h3>ABOUT MATLAB</h3>
+      <p>MATLAB is a multi-paradigm numerical computing enviroment. MATLAB combines a desktop environment tuned for iterative analysis and design processes with a programming language that expresses matrix and array mathematics directly.
+<br>MATLAB apps let you see how different algorithms work with your data. Iterate until you’ve got the results you want, then automatically generate a MATLAB program to reproduce or automate your work.
+MATLAB code is production ready, so you can go directly to your cloud and enterprise systems, and integrate with data sources and business systems.<br>
+MATLAB supports Model-Based Design, which is used for multidomain simulation, automatic code generation, and test and verification of embedded systems.
+</p>
+    </div>
+    <div class="w3-col m6">
+      <img class="w3-image w3-round-large" src="https://www.mathworks.com/content/mathworks/www/en/products/matlab/jcr:content/mainParsys/band_copy_1227855798/mainParsys/columns_copy/1/image_copy.adapt.full.high.gif/1507296440008.gif" width="700" height="294">
+    </div>
+  </div>
+</div>
+
+
+<!-- Team Section -->
+<div class="w3-container" style="padding:128px 16px" id="team">
+  <h3 class="w3-center">THE TEAM</h3>
+  <p class="w3-center w3-large">Course coodinators of our workshop</p>
+  <div class="w3-row-padding w3-grayscale" style="margin-top:64px">
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-card">
+
+        <div class="w3-container">
+
+
+
+        </div>
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-card">
+        <div class="w3-center">
+        <img src="/Users/sauravgajbhiye/Desktop/MATLAB WEBSITE/ANKIT SIR.JPG" height="210"width="200">
+      </div>
+        <div class="w3-container">
+          <h3>Dr. Ankit Bhurane</h3>
+          <p class="w3-opacity">Faculty at IIIT Nagpur</p>
+          <p>Dr. Ankit Bhurane is an Assistant Professor in the Electronics and Communication Engineering Department, Indian Institute of Information Technology, Nagpur. He recieved his Ph.D. from Indian Insitute of Technology, Bombay, India in 2016. His research interests include image processing and scalable video coding. He has authored a few papers in the refereed journals and conferences of national and international repute.</p>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <p><button onclick="myFunction1()" class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Contact</button></p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-card ">
+        <div class="w3-center">
+        <img src="/Users/sauravgajbhiye/Desktop/MATLAB WEBSITE/Deep Gupta sir.jpg"  height="210"width="200">
+      </div>
+        <div class="w3-container">
+          <h3>Dr. Deep Gupta</h3>
+          <p class="w3-opacity">Faculty at VNIT Nagpur</p>
+          <p>Dr. Deep Gupta is an Assistant Professor in the Electronics and Communication Engineering Department, Viveshvaraya National Institute of Technology, Nagpur. He received his Ph.D. and Master degree from Indian Institute of Technology Roorkee, India in 2015 and 2010 respectively. Dr. Gupta is a recipient of Dr. T.K. Saksena Memorial and S.Parthasarathy award from Ultrasonic Society of India in 2016 & 2014 respectively. His research intresets includes medical image processing and analysis, biomedical instrumentation, signal processing and cognitive analysis. He has authored several papers in the refereed journals and conferences of international repute such as IEEE Transactions on Medical Imaging, Processing Letters, IET Image Processing, IET Computer Vision and Biomedical Signal Processing and Control Journal.</p>
+          <br>
+          <p><button onclick="myFunction2()"class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Contact</button></p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-card">
+
+        <div class="w3-container">
+
+
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Promo Section "Statistics" -->
+<div class="w3-container w3-row w3-center w3-dark-grey w3-padding-64">
+  <div class="w3-quarter">
+    <span class="w3-xxlarge">50+</span>
+    <br>Participants
+  </div>
+  <div class="w3-quarter">
+    <span class="w3-xxlarge">5</span>
+    <br>Days
+  </div>
+  <div class="w3-quarter">
+    <span class="w3-xxlarge">12+</span>
+    <br>Learning Hours
+  </div>
+  <div class="w3-quarter">
+    <span class="w3-xxlarge">20+</span>
+    <br>Topics Covered
+  </div>
+</div>
+
+<!-- Work Section -->
+<div class="w3-container" style="padding:128px 16px" id="work">
+  <h3 class="w3-center">OUR WORKSHOP</h3>
+  <p class="w3-center w3-large">What topics will be covered in the Workshop?</p>
+
+  <div class="w3-row-padding" style="margin-top:64px">
+    <div class="w3-col l3 m6">
+      <p>Basic Maths Functions</p>
+      <img src="http://www.mathworks.com/help/examples/matlab/win64/GraphOfInverseHyperbolicCotangentFunctionExample_03.png" style="width:100%" class="w3-hover-opacity" alt="Maths Functions">
+    </div>
+    <div class="w3-col l3 m6">
+      <p>MATLAB Graphics</p>
+      <img src="https://de.mathworks.com/help/matlab/ref/datacursormode_dtbox2.png" style="width:100%"  class="w3-hover-opacity" alt="MATLAB Graphics">
+    </div>
+    <div class="w3-col l3 m6">
+      <p>Signal Processing</p>
+      <img src="https://i.stack.imgur.com/TLp3W.png" style="width:100%"  class="w3-hover-opacity" alt="Signal Processing">
+    </div>
+    <div class="w3-col l3 m6">
+      <p>Processing ECG Signals</p>
+      <img src="https://www.mathworks.com/matlabcentral/mlc-downloads/downloads/submissions/53983/versions/5/previews/html/ExampleECGBitalino_02.png" style="width:100%"  class="w3-hover-opacity" alt="Processing ECG Signals">
+    </div>
+  </div>
+
+
+
+  <div class="w3-row-padding w3-section w3-col l3 m6">
+    <p>Speech Recognition</p>
+      <img src="https://www.mathworks.com/matlabcentral/mlc-downloads/downloads/submissions/8779/versions/1/screenshot.PNG" style="width:100%" height="254"class="w3-hover-opacity" alt="Speech Recognition">
+    </div>
+    <div class="w3-section w3-col l3 m6">
+      <p>Face Recognition</p>
+      <img src="https://i.pinimg.com/originals/15/1c/bb/151cbbeb5fbe2613d2619ba2d6dd3e98.jpg" style="width:100%" height:"254" class="w3-hover-opacity" alt="Face Recognition">
+    </div>
+    <div class=" w3-section w3-col l3 m6">
+      <p>Video Processing</p>
+      <img src="https://www.mikroprojekt.hr/images/icons/categories/IPC-Video3D.png"style="width:100%"height="254"  class="w3-hover-opacity" alt="Video Processing">
+    </div>
+    <div class="w3-section w3-col l3 m6">
+      <p>And many more!!!</p>
+      <img src="https://www.mathworks.com/help/examples/matlab_featured/win64/MatlabLogoExample_07.png" style="width:100%" class="w3-hover-opacity" alt="And Many More">
+    </div>
+  </div>
+</div>
+
+
+<div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+  <span class="w3-button w3-xxlarge w3-black w3-padding-large w3-display-topright" title="Close Modal Image">×</span>
+  <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+    <img id="img01" class="w3-image">
+    <p id="caption" class="w3-opacity w3-large"></p>
+  </div>
+</div>
+
+
+
+<!-- Contact Section -->
+<div class="w3-container w3-light-grey" style="padding:128px 16px" id="contact">
+  <h3 class="w3-center">CONTACT US</h3>
+  <p class="w3-center w3-large">Lets get in touch. Send us a message:</p>
+  <div class="w3-row-padding" style="margin-top:64px">
+    <div class="w3-half">
+      <p><i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right "></i>IIIT Nagpur, BSNL RTTC , beside Balaji temple, near Seminary Hills , Nagpur 440006.</p>
+      <p><i class="fa fa-phone fa-fw w3-xxlarge w3-margin-right"></i> Phone: Aayesha:7350452238 | Ashutosh:8625061792 | Saurav:7038762402</p>
+      <p><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"></i>Email: workshop.iiitnagpur@gmail.com</p>
+      <br>
+           <form action="mailto:workshop.iiitnagpur@gmail.com" method="post" enctype="multipart/form-data">
+        <p><input class="w3-input w3-border" type="text" placeholder="Name" required name="Name"></p>
+        <p><input class="w3-input w3-border" type="text" placeholder="Email" required name="Email"></p>
+        <p><input class="w3-input w3-border" type="text" placeholder="Subject" required name="Subject"></p>
+        <p><input class="w3-input w3-border" type="text" placeholder="Message" required name="Message"></p>
+
+        <p>
+          <button class="w3-button w3-black" type="submit">
+  <a href="mailto:workshop.iiitnagpur@gmail.com"><i class="fa fa-paper-plane"></i> SEND MESSAGE</a>
+          </button>
+        </p>
+      </form>
+    </div>
+
+    <div class="w3-half">
+     <!-- Add Google Maps -->
+     <div id="googleMap" class="w3-greyscale-max" style="width:100%;height:510px;"></div>
+   </div>
+ </div>
+</div>
+
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-64">
+  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+  <div class="w3-xlarge w3-section">
+<a href="https://www.facebook.com/learning.not.ends/"><i class="fa fa-facebook-official w3-hover-opacity"></i></a>
+<a href="https://www.instagram.com/iiitnagpur/"><i class="fa fa-instagram w3-hover-opacity"></i></a>
+  <a href="https://www.youtube.com/channel/UCcQEXD69BdMFyU8872dU2_A"><i class="fa fa-youtube w3-hover-opacity"></i></a>
+  <a href="https://twitter.com/IIIT_NAGPUR"><i class="fa fa-twitter w3-hover-opacity"></i></a>
+  </div>
+  <p>For more information about us visit <a href="http://iiitn.ac.in" title="IIIT Nagpur" target="_blank" class="w3-hover-text-green">IIIT Nagpur </p>
+</footer>
+<!-- Add Google Maps -->
+<script>
+function myMap()
+{
+  myCenter=new google.maps.LatLng( 21.164476,79.055433);
+  var mapOptions= {
+    center:myCenter,
+    zoom:16, scrollwheel: false, draggable: false,
+    mapTypeId:google.maps.MapTypeId.ROADMAP
+  };
+  var map=new google.maps.Map(document.getElementById("googleMap"),mapOptions);
+
+  var marker = new google.maps.Marker({
+    position: myCenter,
+  });
+  marker.setMap(map);
+}
+
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+
+// Toggle between showing and hiding the sidebar when clicking the menu icon
+var mySidebar = document.getElementById("mySidebar");
+
+function w3_open() {
+    if (mySidebar.style.display === 'block') {
+        mySidebar.style.display = 'none';
+    } else {
+        mySidebar.style.display = 'block';
+    }
+}
+
+// Close the sidebar with the close button
+function w3_close() {
+    mySidebar.style.display = "none";
+}
+</script>
+
+<script>
+function myFunction1() {
+    alert("Email:ankit.bhurane@gmail.com | Mobile:+91 9960402260" );
+
+}
+</script>
+
+<script>
+function myFunction2() {
+    alert("Email:deepgupta@ece.vnit.ac.in| Mobile:+91 9358190782" );
+
+}
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCKea7CbaCq4nvN50plwGYnPp8kzkkJ_dM&callback=myMap"></script>
+</body>
+</html>
